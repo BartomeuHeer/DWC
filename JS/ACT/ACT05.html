@@ -1,0 +1,51 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var name=prompt("Introdueix el teu nom ");
+    var nota1=prompt("Introdueix la primera nota ");
+    var nota2=prompt("Introdueix la segona nota ");
+    var nota3=prompt("Introdueix la tercera nota ");
+    var mitja=(parseInt(nota1)+parseInt(nota2)+parseInt(nota3))/3;
+    if (mitja>=5) {
+      document.write(name+" ,la mitja esta aprovada, "+mitja);
+    }
+    else {
+      document.write(name+" ,la teva mitja no esta aprovada, "+mitja)
+    }
+    document.write("<br>");
+
+    var email1=prompt("Introdueix el teu email ");
+    var email2=prompt("Torna a introduir el teu email ");
+    if (email1 == email2) {
+      document.write("El mail coincideix, es correcte")
+    }
+    else {
+      document.write("El mail no coincideix, hi ha una errada");
+    }
+    document.write("<br>");
+
+    var edat=prompt("Introdueix la teva edat:");
+    if (edat>=18 && edat<65) {
+      document.write("Estas en edat per fer feina.")
+    }
+    else {
+      document.write("No tens edat per fer feina.")
+    }
+
+    var numE=prompt("Introdueix un numero i et dire si es par o impar");
+    if (numE%2==0) {
+      document.write(numE+" és par")
+    }
+    else {
+      document.write(numE+" és impar")
+    }
+    document.write("<br>");
+  </script>
+</body>
+</html>
