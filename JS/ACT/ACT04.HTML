@@ -1,0 +1,39 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    var costat;
+    costat=prompt("Posa el costat del cuadrat i et dire el perimetre ","");
+    var perimetre=parseInt(costat)*parseInt(4);
+    document.write("El perimetre és ");
+    document.write(perimetre);
+    document.write("<br>");
+    var num1=prompt("Primer numero ");
+    var num2=prompt("Segon numero ");
+    var num3=prompt("Tercer numero ");
+    var num4=prompt("Quart numero ");
+    var sum=parseInt(num1)+parseInt(num2)+parseInt(num3)+parseInt(num4);
+    document.write("La suma total és "+sum );
+    document.write("<br>");
+
+    var preu1=prompt("Preu tomatigues ");
+    var quant1=prompt("Quantitat tomatigues ");
+    var preu2=prompt("Preu patates ");
+    var quant2=prompt("Quantitat patates ");
+    var factura=parseInt(preu1)*parseInt(quant1)+parseInt(preu2)*parseInt(quant2);
+    document.write("La factura sera de "+factura+"€");
+    document.write("<br>");
+
+    var base=prompt("Base del triangle ");
+    var altura=prompt("Altura del triangle ");
+    var area=(parseInt(base)*parseInt(altura))/parseInt(2);
+    document.write("L'area del triangle és "+area);
+  </script>
+</body>
+</html>
