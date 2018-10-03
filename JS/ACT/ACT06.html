@@ -18,10 +18,10 @@
       document.write("La resta de "+n1+" i "+n2+" és = "+rest1);
     }
     document.write("<br>");
-    var name=prompt("Introdueix el teu nom ");
-    var nota1=prompt("Introdueix la primera nota ");
-    var nota2=prompt("Introdueix la segona nota ");
-    var nota3=prompt("Introdueix la tercera nota ");
+    var name=prompt("Introdueix el teu nom ","");
+    var nota1=prompt("Introdueix la primera nota ","");
+    var nota2=prompt("Introdueix la segona nota ","");
+    var nota3=prompt("Introdueix la tercera nota ","");
     var mitja=(parseInt(nota1)+parseInt(nota2)+parseInt(nota3))/3;
     if (mitja>=5) {
       document.write(name+" ,la mitja esta aprovada, "+mitja);
@@ -30,7 +30,7 @@
       document.write(name+" ,la teva mitja no esta aprovada, "+mitja)
     }
     document.write("<br>");
-    var numE=prompt("Introdueix un numero i et dire si es par o impar");
+    var numE=prompt("Introdueix un numero i et dire si es par o impar","");
     if (numE%2==0) {
       document.write(numE+" és par")
     }
@@ -38,7 +38,7 @@
       document.write(numE+" és impar")
     }
     document.write("<br>");
-    var edat=prompt("Introdueix la teva edat:");
+    var edat=prompt("Introdueix la teva edat:","");
     if (edat>=18 && edat<65) {
       document.write("Estas en edat per fer feina.")
     }

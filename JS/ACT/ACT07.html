@@ -1,0 +1,45 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var num1=prompt("Introdueix el primer numero","");
+    var num2=prompt("Introdueix el segon numero","");
+    var num3=prompt("Introdueix el tercer numero", "");
+    document.write("EL numero mes gran és "+Math.max(num1,num2,num3));
+    document.write("<br>");
+    var num1=prompt("Introdueix el primer numero","");
+    var num2=prompt("Introdueix el segon numero","");
+    var num3=prompt("Introdueix el tercer numero", "");
+    document.write("EL numero mes gran és "+Math.min(num1,num2,num3));
+    document.write("<br>");
+    */
+    var n=prompt("Introdueix un numero de 0 a 999, i et dire quants digits té","");
+    var cont = 0;
+    if (n>=100) {
+      document.write("El numero "+n+" te 3 digits");
+    }
+    else if (n>=10) {
+      document.write("El numero "+n+" te 2 digits");
+    }
+    else  {
+      document.write("El numero "+n+" te 1 digit");
+    }
+    document.write("<br>");
+    var n2=prompt("introdueix un numero i et dire si es negatiu, positiu o cero");
+    if (n2>0) {
+      document.write("És positiu");
+    }
+    else if(n2<0) {
+      document.write("És negatiu");
+    }
+    else if(n2=0) {
+      document.write("És cero")
+    }
+  </script>
+</body>
+</html>
