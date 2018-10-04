@@ -1,73 +1,71 @@
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
+
 <body>
   <script type="text/javascript">
-    
-    var day=prompt("Introdueix el dia","");
-    var month=prompt("Introdueix el mes","");
-    var year=prompt("Introdueix l'any","");
-    if (day==24&&month==12&&year==2018) {
+    var day = prompt("Introdueix el dia", "");
+    var month = prompt("Introdueix el mes", "");
+    var year = prompt("Introdueix l'any", "");
+    if (day == 24 && month == 12 && year == 2018) {
       document.write("Today is christmas");
-    }
-    else {
+    } else {
       document.write("Today is not christmas");
     }
     document.write("<br>");
-    var num1=prompt("Primer numero","");
-    var num2=prompt("Segon numero","");
-    var num3=prompt("Tercer numero","");
+    var num1 = prompt("Primer numero", "");
+    var num2 = prompt("Segon numero", "");
+    var num3 = prompt("Tercer numero", "");
 
-    if (num1<10&&num2<10&&num3<10) {
+    if (num1 < 10 && num2 < 10 && num3 < 10) {
       document.write("Tots tres nombres son mes petits que 10");
-    }
-    else {
+    } else {
       document.write("No tots els numeros son menors que 10")
     }
     document.write("<br>");
-    var x=prompt("Introdueix la coordenada X","");
-    var y=prompt("Introdueix la coordenada Y","");
+    var x = prompt("Introdueix la coordenada X", "");
+    var y = prompt("Introdueix la coordenada Y", "");
 
-    if (x>0&&y>0) {
+    if (x > 0 && y > 0) {
       document.write("primer cuadrant");
     }
-    if (x<0&&y>0) {
+    if (x < 0 && y > 0) {
       document.write("segon cuadrant");
     }
-    if (x>0&&y<0) {
+    if (x > 0 && y < 0) {
       document.write("Tercer cuadrant");
     }
-    if (x<0&&y<0) {
+    if (x < 0 && y < 0) {
       document.write("Quart cuadrant");
     }
     document.write("<br>");
-    var salary=prompt("Introdueix el salari","");
-    var years=prompt("Introdueix els anys en l'empresa","");
-    if (salary<500) {
-      if (years>=10) {
-        document.write("El salari serà de "+(salary*1.2));
+    var salary = prompt("Introdueix el salari", "");
+    var years = prompt("Introdueix els anys en l'empresa", "");
+    if (salary < 500 && years >= 10) {
+
+      document.write("El salari serà de " + (salary * 1.2));
+    }
+      else if (salary < 500 && years < 10) {
+        document.write("El salari serà de " + (salary * 1.05));
       }
       else {
-        document.write("El salari serà de "+(salary*1.05));
+        document.write("No hi ha increment de salari");
       }
-    }
-    else {
-      document.write("No hi ha increment de salari");
-    }
-
-    var numero1=prompt("Introdueix un numero","");
-    var numero2=prompt("Introdueix un numero","");
-    var numero3=prompt("Introdueix un numero","");
-    if (numero1<10||numero2<10||numero3<10) {
-      document.write("Hi ha almenys un numero mes petit que 10");
-    }
-    else {
-      document.write("Tots els numeros son mes grans que 10");
-    }
+      document.write("<br>");
+      var numero1 = prompt("Introdueix un numero", "");
+      var numero2 = prompt("Introdueix un numero", "");
+      var numero3 = prompt("Introdueix un numero", "");
+      if (numero1 < 10 || numero2 < 10 || numero3 < 10) {
+        document.write("Hi ha almenys un numero mes petit que 10");
+      } else {
+        document.write("Tots els numeros son mes grans que 10");
+      }
   </script>
 </body>
+
 </html>
