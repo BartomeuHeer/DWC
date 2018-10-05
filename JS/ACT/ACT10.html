@@ -1,0 +1,159 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+  /*
+  var n = 1;
+  while (n<=50) {
+    document.write(n+" ");
+    n++;
+  }
+    document.write("<br>");
+    n=50;
+    while (n>0) {
+      document.write(n+" ");
+      n--;
+    }
+
+    document.write("<br>");
+    var num1 = 11;
+    var cont1 = 0;
+    while (cont1<25) {
+      document.write(num1+" ");
+      num1=num1+11;
+
+      cont1++;
+  }
+
+    document.write("<br>");
+
+    var num2 = -50;
+
+    while (num2<=50) {
+      document.write(num2+" ");
+      num2++;
+    }
+
+    document.write("<br>");
+
+    num3 = 2;
+    while (num3<=100) {
+      document.write(num3+" ");
+      num3=num3+2;
+    }
+
+    document.write("<br>");
+    for (var i = 7; i <= 70; i=i+7) {
+      document.write(i+" ");
+    }
+    var num4=7;
+    while (num4<=70) {
+      document.write(num4+" ");
+      num4=num4+7;
+    }
+    var cont2 =0;
+    var contSus = 0;
+    var contApr = 0;
+    while (cont2<10) {
+      var notStud = prompt("Introdueix la nota","");
+       notStud = parseInt(notStud);
+       if (notStud>=5) {
+         contApr++;
+       }
+       else {
+         contSus++;
+       }
+       cont2++;
+    }
+    document.write("<br>");
+    document.write("El numero d'aprovats és "+contApr);
+    document.write("<br>");
+    document.write("El numero de suspesos és "+contSus);
+    document.write("<br>");
+
+    var cont3 = 0;
+    var sum = 0;
+    while (cont3<5) {
+      var nota = prompt("Introdueix la nota","");
+       nota = parseInt(nota);
+       sum=sum+nota;
+       cont3++;
+    }
+    document.write("La mitja és "+(sum/5));
+
+
+    document.write("<br>");
+    var cont4 = 0;
+    var salM = 0;
+    var salG = 0;
+    var total = 0;
+    while (cont4<5) {
+      var sal = prompt("Introdueix el salari ","");
+      sal = parseInt(sal);
+      if (sal>=500&&sal<=1000) {
+        salM++;
+      }
+      else if (sal>1000) {
+        salG++;
+      }
+      total = total+sal;
+      cont4++;
+    }
+    document.write("El nombre de salaris entre 500€ i 1000€ és "+salM);
+    document.write("<br>");
+    document.write("El nombre de salaris mes grans de 1000€ és "+salG);
+    document.write("<br>");
+    document.write("La suma de salaris total és "+total);
+*/
+    document.write("<br>");
+    var cont5 = 0;
+    var sum1 = 0;
+    var sum2 = 0;
+    while (cont5<3) {
+      var numero1 = prompt("Introdueix un numero","");
+      sum1 = sum1+numero1;
+      cont5++;
+    }
+    cont5=0;
+    while (cont5<3) {
+      var numero2 = prompt("Introdueix un numero","");
+      sum2 = sum2+numero2;
+      cont5++;
+    }
+    if (sum1>sum2) {
+      document.write("La suma de la primera llista de numeros es mes gran","");
+
+    }
+    else if (sum1<sum2) {
+      document.write("La suma de la segona llista de numeros es mes gran","");
+    }
+    else {
+      document.write("La suma de les dues llistes son iguals","");
+    }
+    document.write("<br>");
+
+    var cont6 = 0;
+    var par = 0;
+    var impar = 0;
+    while (cont6<5) {
+      var num = prompt("Introdueix un numero","");
+      num = parseInt(num);
+      if (num%2==0) {
+        par++;
+      }
+      else {
+        impar++;
+      }
+      cont6++;
+    }
+    document.write("Hi ha "+par+" numero/s par/s");
+    document.write("<br>");
+    document.write("Hi ha "+impar+" numero/s impar/s");
+  </script>
+</body>
+</html>
