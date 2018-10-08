@@ -1,0 +1,92 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+  var max = 9999;
+  var suma = 0;
+    do {
+      var numEntr = prompt("Introdueix un numeros i et fare la suma (el numero 9999 aturara el programa)");
+      numEntr = parseInt(numEntr);
+      suma =suma+ numEntr;
+    } while (numEntr!=9999);
+    if (suma==0) {
+      document.write("La suma dona 0");
+    }
+    else if (suma>0) {
+      document.write("La suma dona un numero positiu "+suma);
+    }
+    else {
+      document.write("La suma dona un numero negatiu "+suma);
+    }
+
+    var id;
+    var name;
+    var edat;
+    var sex;
+    var contPer = 0;
+    var contH = 0;
+    var contD = 0;
+    var contHE = 0;
+    var edatW = 0;
+    var edatH = 2999;
+    var nomF;
+    var idJ;
+
+
+    do {
+      id = prompt("Introdueix el id ( 0 per aturar el programa)","");
+      name = prompt("Introdueix el nom","");
+      edat = prompt("Introdueix la edat","");
+      sex = prompt("Introdueix el sexe (male/female)","");
+      contPer++;
+      if (sex == "male") {
+        contH++
+      }
+      else {
+        contD++;
+      }
+      if (sex == "male" && edat>=18 && edat<=65) {
+        contHE++;
+      }
+      if (sex=="female"&& edat>edatW) {
+        name=nomF;
+      }
+      if (sex=="male" && edat<edatH) {
+        id==idJ;
+      }
+
+    } while (id!=0);
+
+    document.write("Hi ha un total de "+contPer+" persones.");
+    document.write("<br>");
+    document.write("Hi ha un total de "+contH+" homes.");
+    document.write("<br>");
+    document.write("Hi ha un total de "+contD+" dones.");
+    document.write("<br>");
+    document.write("Hi ha un total de "+contHE+" homes entre 18 i 65 anys.");
+    document.write("<br>");
+    document.write("El nom de la dona mes vella és "+nomF);
+    document.write("<br>");
+    document.write("L'id del home mes jove és "+id);
+    document.write("<br>")
+
+    var accNumb;
+    var name;
+    var money;
+    var cont = 0;
+    do {
+      accNumb = prompt("Introdueix el numero de conta","");
+      name = prompt("Introdueix el nom","");
+      money = prompt("Introdueix el dobers","");
+      document.write(name+" is the owner of "+accNumb+" account with "+money+" €.");
+      count++;
+    } while (cont<5);
+  </script>
+</body>
+</html>
