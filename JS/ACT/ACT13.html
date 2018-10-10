@@ -1,0 +1,57 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function minim(num1,num2,num3) {
+
+      document.write("El numero mes petit és "+Math.min(num1,num2,num3)+"<br>");
+    }
+    minim(1,2,3);
+
+    function ordenar(num1,num2,num3) {
+      var array = [num1,num2,num3];
+      document.write("Els numeros ordenats seran "+array.sort()+"<br>");
+    }
+    ordenar(2,4,1);
+
+    function perimetre(costat) {
+      document.write("El perímetre del cuadrat sera "+(costat*4)+"<br>");
+    }
+    perimetre(4);
+
+    function digits(num) {
+      return num.lenght;
+      //document.write("El numero "+num+" té "+num.toString().lenght+" digits");
+    }
+    document.write(digits(345)+"<br>");
+
+    function average(num1,num2,num3) {
+      var suma = num1+num2+num3;
+      document.write("La mitja és "+suma/3+"<br>");
+    }
+    average(1,2,3);
+
+    function suma() {
+      var num1 = prompt("Introdueix un numero","");
+      num1 = parseInt(num1);
+      var num2 = prompt("Introdueix un numero","");
+      num2 = parseInt(num2);
+      var num3 = prompt("Introdueix un numero","");
+      num3 = parseInt(num3);
+      var num4 = prompt("Introdueix un numero","");
+      num4 = parseInt(num4);
+      var num5 = prompt("Introdueix un numero","");
+      num5 = parseInt(num5);
+
+      var suma = (num1+num2+num3+num4+num5);
+      document.write("La suma és "+suma);
+    }
+    suma();
+  </script>
+</body>
+</html>
