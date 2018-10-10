@@ -1,0 +1,161 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+/*
+    var base;
+    var height;
+    var area;
+    var contArea;
+    for (var i = 0; i < 3; i++) {
+      base = prompt("Introdueix la base","");
+      height = prompt("Introdueix l'altura","");
+      area = (base*height)/2;
+      document.write("L'area del triangle és "+area);
+      document.write("<br>");
+      if (area>12) {
+        contArea++;
+      }
+    }
+    document.write("Hi ha "+contArea+" triangles amb un area superior a 12");
+    document.write("<br>");
+
+    var num;
+    var sum = 0;
+    for (var i = 0; i < 10; i++) {
+      num = prompt("Introdueix un numero","");
+      num = parseInt(num);
+      if (i>=5) {
+        sum += num;
+      }
+    }
+
+    document.write("La suma dels darrers 5 numeros és "+sum);
+    document.write("<br>");
+
+    var taula1 = 5;
+    for (var i = 1; i <= 10; i++) {
+      document.write("5 * "+i+" = "+(taula1*i)+"<br>");
+    }
+    document.write("<br>");
+
+    var taula2 = prompt("Introdueix un numero i et dire la seva taula d emultiplicar fins a N*10","");
+    taula2 = parseInt(taula2);
+    for (var i = 1; i <= 10; i++) {
+      document.write(taula2+" * "+i+" = "+(taula2*i)+"<br>");
+    }
+    document.write("<br>");
+
+    var costat1;
+    var costat2;
+    var costat3;
+    var equil = 0;
+    var isc = 0;
+    var esca = 0;
+    for (var i = 0; i < 4; i++) {
+      costat1 = prompt("Introdueix el primer costat","");
+      costat1 = parseInt(costat1);
+      costat2 = prompt("Introdueix el segon costat","");
+      costat2 = parseInt(costat2);
+      costat3 = prompt("Introdueix el tercer costat","");
+      costat3 = parseInt(costat3);
+
+      if (costat1 == costat2 && costat2 == costat3 && costat1 == costat3) {
+        equil++;
+        document.write("El triangle "+(i+1)+" és equilater.<br>");
+      }
+      else if (costat1 != costat2 && costat1 != costat3 && costat2 != costat3) {
+        esca++;
+        document.write("El triangle "+(i+1)+" és escalè.<br>");
+      }
+      else {
+        isc++;
+        document.write("El triangle "+(i+1)+" és isoscles.<br>");
+      }
+    }
+    document.write("Hi ha "+esca+" triangles escalès");
+    document.write("<br>");
+    document.write("Hi ha "+equil+" triangles equilaters");
+    document.write("<br>");
+    document.write("Hi ha "+isc+" triangles isoscles");
+    document.write("<br>");
+    if (equil > isc && equi > esca) {
+      document.write("Hi ha mes triangles equilaters.<br>");
+    }
+    else if (isc > equil && isc > esca) {
+      document.write("Hi ha mes triangles isoscles.<br>")
+    }
+    else {
+      document.write("Hi ha mes triangles escalès.<br>")
+    }
+
+    var nums;
+    var numsNeg = 0;
+    var numsPos = 0;
+    var numsImp = 0;
+    var sumNumPar = 0;
+    for (var i = 0; i < 10; i++) {
+      nums = prompt("Introdueix un numero","");
+      nums = parseInt(nums);
+
+      if (nums>0) {
+        numsPos++;
+      }
+      else {
+        numsNeg++;
+      }
+      if (nums % 2 != 0) {
+        numsImp++;
+      }
+      else {
+        sumNumPar += nums;
+      }
+    }
+    document.write("Total numeros positius "+numsPos+"<br>");
+    document.write("Total numeros negatius "+numsNeg+"<br>");
+    document.write("Total numeros imparells "+numsImp+"<br>");
+    document.write("Suma total numeros parells "+sumNumPar+"<br>");
+*/
+    var clas = [5,6,11];
+    var sumNota = 0;
+    var notaAlum;
+    var mitja1;
+    var mitja2;
+    var mitja3;
+    for (var i = 0; i < clas.length; i++) {
+      for (var j = 0; j < clas[i]; j++) {
+        notaAlum = prompt("Introdueix la nota de l'alumne","");
+        notaAlum = parseInt(notaAlum);
+        sumNota += notaAlum;
+      }
+      if (i == 0) {
+        mitja1 = sumNota/clas[i];
+      }
+      else if (i == 1) {
+        mitja2 = sumNota/clas[i];
+      }
+      else {
+        mitja3 = sumNota/clas[i];
+      }
+
+    }
+    document.write("la mitja de la primera classe és "+mitja1+"<br>");
+    document.write("la mitja de la segona classe és "+mitja2+"<br>");
+    document.write("la mitja de la tercera classe és "+mitja3+"<br>");
+    if (mitja1>mitja2 && mitja1>mitja3) {
+      document.write("La mitja de la primera classe,"+mitja1+",és la mes alta");
+    }
+    else if (mitja2>mitja1 && mitja2>mitja3) {
+      document.write("La mitja de la segona classe,"+mitja2+",és la mes alta");
+    }
+    else {
+      document.write("La mitja de la tercera classe,"+mitja3+",és la mes alta");
+    }
+  </script>
+</body>
+</html>
