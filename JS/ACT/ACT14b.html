@@ -1,0 +1,40 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+
+    function person(nameP, age) {
+      this.age = age;
+      this.nameP = nameP;
+    }
+
+    function company(nameC, topAge) {
+      this.nameC = nameC;
+      this.topAge = topAge;
+    }
+    function comprovar(agePer, ageMax , namePer) {
+      if (agePer > ageMax) {
+        document.write(namePer + " no pot entrar a la companyia ja que la seva edat sobrapassa la màxima"+ "<br>");
+      }
+      else {
+        document.write(namePer + " pot entrar a la companyia ja que la seva edat no sobrapassa la màxima"+ "<br>");
+      }
+    }
+
+  </script>
+</head>
+<body>
+  <script>
+    var per1,per2,comp;
+    per1 = new person("Joan",74);
+    per2 = new person("Miquel",65);
+    comp = new company("Gesa",65);
+    document.write("La companyia " + comp.nameC + " té els treballadors " + per1.nameP + " i " + per2.nameP + "<br>");
+    comprovar(per1.age, comp.topAge, per1.nameP );
+    comprovar(per2.age, comp.topAge, per2.nameP);
+  </script>
+</body>
+</html>

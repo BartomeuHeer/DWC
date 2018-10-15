@@ -1,0 +1,49 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <script>
+    //clas addition
+
+
+
+
+    function addition() {
+
+      this.loadValue1 = loadValue1;
+      this.loadValue2 = loadValue2;
+      this.result = result;
+
+    }
+
+      function loadValue1() {
+         this.value1 = prompt("Introdueix un numero","");
+      }
+      function loadValue2() {
+         this.value2 = prompt("Introdueix un numero","");
+      }
+      function result() {
+        var resultat = parseInt(this.value1) + parseInt(this.value2);
+        document.write("El resultat de la suma és " + resultat);
+      }
+
+
+
+  </script>
+</head>
+<body>
+  <head>
+    <script>
+      var conta;
+      conta = new addition();
+      conta.loadValue1();
+      conta.loadValue2();
+      conta.result();
+    </script>
+
+  </head>
+</body>
+</html>
