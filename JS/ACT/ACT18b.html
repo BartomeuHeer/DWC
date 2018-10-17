@@ -1,0 +1,22 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var str = prompt("Introdueix una frase","");
+    var minStr = prompt("Introdueix una paraula que hagi sortit a la frase anterior i et retornare el index","");
+
+    var n = str.indexOf(minStr);
+    if (n == -1) {
+      document.write("No hi és");
+    }
+    else {
+      document.write("És a la posició "+ n);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var n = prompt("Introdueix la mida d el'array","");
+    n = parseInt(n);
+
+    var array = new Array(n);
+
+    var k1 = prompt("Introdueix un numero","");
+    var k2 = prompt("Introdueix un numero","");
+    k1 = parseInt(k1);
+    k2 = parseInt(k2);
+    array.unshift(k1,k2);
+
+    document.write(array);
+  </script>
+</body>
+</html>

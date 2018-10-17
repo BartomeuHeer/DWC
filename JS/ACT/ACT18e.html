@@ -1,0 +1,50 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+  function half(str) {
+    document.write(str.substr(0,(str.length/2)) + "<br>");
+  }
+  function lastChar(str) {
+
+    document.write(str.charAt((str.length - 1)) + "<br>");
+  }
+  function reverse(str) {
+    var splitStr = str.split("");
+    splitStr.reverse();
+    var strR = splitStr.join("");
+    document.write(strR + "<br>");
+  }
+  function witheSpace(str) {
+    var splitStr = str.split("");
+
+    var strR = splitStr.join(" ");
+    document.write(strR + "<br>");
+  }
+  function vowels(str) {
+    str.toLowerCase();
+    var splitStr = str.split("");
+    var cont = 0;
+    for (var i = 0; i < splitStr.length; i++) {
+      if (splitStr[i] == "a" || splitStr[i] == "e" || splitStr[i] == "i" || splitStr[i] == "o" || splitStr[i] == "u") {
+        cont++;
+      }
+    }
+    document.write(cont);
+  }
+  </script>
+</head>
+<body>
+  <script>
+    var str = prompt("Introdueix una paraula","");
+    lastChar(str);
+    half(str);
+    reverse(str);
+    witheSpace(str);
+    vowels(str);
+  </script>
+</body>
+</html>
