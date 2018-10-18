@@ -1,0 +1,48 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  var proc = "";
+  var mon = "";
+  var hd = "";
+  function pc() {
+     proc = document.getElementById("Processor");
+     mon = document.getElementById("Monitor");
+     hd = document.getElementById("HardDisk");
+
+  }
+
+  function pc2() {
+    document.getElementById("text").value = (parseInt(proc.options[proc.selectedIndex].value) + parseInt(mon.options[mon.selectedIndex].value) + parseInt(hd.options[hd.selectedIndex].value));
+  }
+
+  </script>
+  <form>
+    Processor: <select id="Processor " onChange="pc()">
+    <option value="400">intel i3 400€</option>
+    <option value="600">intel i5 600€</option>
+    <option value="800">intel i7 800€</option>
+    </select>
+    <br>
+    Monitor: <select id="Monitor" onChange="pc()">
+    <option value="250">Samsung 20' 250€</option>
+    <option value="350">Samsung 22' 350€</option>
+    <option value="550">Samsung 26' 550€</option>
+    </select>
+    <br>
+    Hard Disk: <select id="HardDisk" onChange="pc()">
+    <option value="300">500GB 300€</option>
+    <option value="440">1TB 440€</option>
+    <option value="500">3TB 500€</option>
+    </select>
+    <br>
+    <input type="button" value="Calculate" onclick="pc2()">
+    Total PC: <input type="text" id="text"><br>
+  </form>
+</body>
+</html>

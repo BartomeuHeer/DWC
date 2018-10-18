@@ -1,0 +1,25 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  function info(){
+    alert(document.getElementById("usName").value);
+    alert(document.getElementById("pass").value);
+    alert(document.getElementById("coment").value);
+  }
+
+  </script>
+  <textarea id="usName" rows="1" cols="30"></textarea>
+  <br>
+  <textarea id="pass" rows="1" cols="30"></textarea>
+  <br>
+  <textarea id="coment" rows="8" cols="80"></textarea>
+  <br>
+  <input type="button" onclick="info()" value="display">
+</body>
+</html>

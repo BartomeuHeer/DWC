@@ -1,0 +1,30 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function sport() {
+      if (document.getElementById("Tennis").checked) {
+        alert("Ha seleccionat tennis");
+      }
+      else if (document.getElementById("Football").checked) {
+        alert("Has seleccionat futbol");
+      }
+      else if (document.getElementById("Karate").checked) {
+        alert("Has seleccionat karate");
+      }
+    }
+  </script>
+  <form>
+    <input type="checkbox" id="Tennis">tennis</input>
+    <input type="checkbox" id="Football">football</input>
+    <input type="checkbox" id="Karate">karate</input>
+    <br>
+    <input type="button" value="eleccio" onclick="sport()">
+  </form>
+</body>
+</html>

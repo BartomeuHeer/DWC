@@ -1,0 +1,25 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function pizzaType() {
+      var p = document.getElementById("select");
+      document.getElementById('text').value=p.options[p.selectedIndex].text;
+    }
+  </script>
+  <form>
+ <select id="select" onChange="pizzaType()">
+ <option value="peperoni">peperoni 6€</option>
+ <option value="margarita">Margarita 4€</option>
+ <option value="procciuto">procciuto 6€</option>
+ </select>
+ <br/>
+ Selected Text:<input type="text" id="text"><br>
+
+</body>
+</html>

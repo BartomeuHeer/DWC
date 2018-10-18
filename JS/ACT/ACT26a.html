@@ -1,0 +1,28 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  function entrada(t) {
+    t.value = "";
+  }
+    function control(t) {
+      var a = t.getElementById("pass").text;
+      if (a.length < 7 && a.length > 20) {
+        alert("Password to long");
+      }
+    }
+  </script>
+  <form>
+    <input type="text" id="userName" onfocus="entrada(this)" value="user name">
+    <br>
+    <input type="password" id="pass" onblur="control(this)" onfocus="entrada(this)" value="Password">
+    <br>
+    <input type="button" value="Confirm">
+  </form>
+</body>
+</html>
