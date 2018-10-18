@@ -1,0 +1,20 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../jquery-3.3.1.js"></script>
+</head>
+<body>
+  <p id="p1">First paragraph</p>
+  <p id="p2">Second paragraph</p>
+  <script>
+  $(document).ready(function() {
+    $("#p2").click(function() {
+      alert("You clicked on the second paragraph");
+    });
+  });
+  </script>
+</body>
+</html>
