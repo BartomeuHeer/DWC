@@ -6,8 +6,20 @@
   <title>Document</title>
 </head>
 <body>
+
   <script>
-    
+   function colorear(ob,color) {
+      ob.bgColor = color;
+    }
   </script>
+  <table border="1">
+    <tr>
+      <td onMouseOver="colorear(this,'#FDFF47')" onMouseOut="colorear(this,'#ffffff')">helo</td>
+      <td onMouseOver="colorear(this,'#FDFF65')" onMouseOut="colorear(this,'#ffffff')">how</td>
+      <td onMouseOver="colorear(this,'#FDFF23')" onMouseOut="colorear(this,'#ffffff')">you</td>
+      <td onMouseOver="colorear(this,'#FDFF98')" onMouseOut="colorear(this,'#ffffff')">doing</td>
+    </tr>
+  </table>
+
 </body>
 </html>

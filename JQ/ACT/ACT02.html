@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../jquery-3.3.1.js"></script>
+</head>
+
+<body>
+  <table border="solid">
+    <tr id="tr1">
+      <td>
+        Barto
+      </td>
+    </tr>
+    <tr id="tr2">
+      <td>
+        guapo
+      </td>
+    </tr>
+  </table>
+  <script>
+    $(document).ready(function() {
+      $("#tr1").click(function() {
+        $(this).css("backgroundColor", "#F42416");
+      });
+    });
+    $(document).ready(function() {
+      $("#tr2").click(function() {
+        $(this).css("backgroundColor", "#EEF416");
+      });
+    });
+  </script>
+</body>
+
+</html>
