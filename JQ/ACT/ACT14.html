@@ -1,0 +1,30 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../jquery-3.3.1.js"></script>
+</head>
+<body>
+  <input type="button" id="b1" value="yellow">
+  <input type="button" id="b2" value="beix">
+  <script>
+    $(document).ready(function() {
+
+      $("#b1").mousedown(function() {
+        $(this).css("backgroundColor","#ff0");
+      });
+      $("#b1").mouseup(function() {
+        $(this).css("backgroundColor","#fff");
+      });
+      $("#b2").mousedown(function() {
+        $(this).css("backgroundColor","#ffa9");
+      });
+      $("#b2").mouseup(function() {
+        $(this).css("backgroundColor","#fff");
+      });
+    });
+  </script>
+</body>
+</html>

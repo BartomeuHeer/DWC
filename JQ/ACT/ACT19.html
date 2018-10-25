@@ -1,0 +1,30 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../jquery-3.3.1.js"></script>
+</head>
+<body>
+
+  <div id="div1">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, ipsum?</p>
+    <p>Lorem ipsum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur sequi nihil dicta, iste quam laudantium et eius doloremque modi cumque.</p>
+  </div>
+  <div id="div2" style="display:none">
+    <p>JUNITO</p>
+    <p>JUANITO</p>
+    <p>JUANITO</p>
+  </div>
+  <script>
+    $(document).ready(function() {
+      $("#div1").click(function() {
+        $("div").toggle(1000);
+      })
+
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../jquery-3.3.1.js"></script>
+  <style media="screen">
+    .style1 {
+      background-color: #ffffcc;
+      font-family:verdana;
+      font-size:14px;
+    }
+    .style2 {
+      background-color: #36B820;
+      font-family:arial;
+      font-size:10px;
+    }
+  </style>
+</head>
+<body>
+<table border="solid">
+  <tr id="trh">
+    <td>HEAD</td>
+    <td>HEAD</td>
+    <td>HEAD</td>
+  </tr>
+  <tr class="trb">
+    <td>BODY</td>
+    <td>BODY</td>
+    <td>BODY</td>
+  </tr>
+  <tr class="trb">
+    <td>BODY</td>
+    <td>BODY</td>
+    <td>BODY</td>
+  </tr>
+</table>
+<input type="button" id="b1" value="ADD CLASS">
+<input type="button" id="b2" value="REMOVE CLASS">
+  <script>
+    $(document).ready(function() {
+
+      $("#b1").click(function() {
+        $("#trh").addClass("style1");
+        $(".trb").addClass("style2");
+      });
+
+      $("#b2").click(function() {
+        $("#trh").removeClass("style1");
+        $(".trb").removeClass("style2");
+      });
+
+    });
+  </script>
+</body>
+</html>

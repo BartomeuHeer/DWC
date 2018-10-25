@@ -1,0 +1,57 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../jquery-3.3.1.js"></script>
+</head>
+<body>
+
+<table border="solid" id="t1">
+  <tr>
+    <td>OFF</td>
+    <td>OFF</td>
+    <td>OFF</td>
+  </tr>
+  <tr>
+    <td>OFF</td>
+    <td>OFF</td>
+    <td>OFF</td>
+  </tr>
+  <tr>
+    <td>OFF</td>
+    <td>OFF</td>
+    <td>OFF</td>
+  </tr>
+</table>
+<br>
+<table border="solid">
+  <tr>
+    <td>OFF</td>
+    <td>OFF</td>
+    <td>OFF</td>
+  </tr>
+  <tr>
+    <td>OFF</td>
+    <td>OFF</td>
+    <td>OFF</td>
+  </tr>
+  <tr>
+    <td>OFF</td>
+    <td>OFF</td>
+    <td>OFF</td>
+  </tr>
+  </table>
+  <br>
+  <input type="button" value="change" id="bt1">
+  <script>
+    $(document).ready(function() {
+      $("#bt1").click(function() {
+        $("#t1 td").text("ON");
+      });
+    });
+  </script>
+
+</body>
+</html>

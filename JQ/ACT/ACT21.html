@@ -1,0 +1,26 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../jquery-3.3.1.js"></script>
+</head>
+<body>
+  <div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, exercitationem corrupti. Soluta voluptates nesciunt, consequatur repudiandae repellendus dolorem enim corporis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam repudiandae temporibus, dicta quam, tempora nemo non nobis sint animi quaerat laborum! Repellendus quas tempore illum, quia porro nulla ratione impedit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, earum?</p>
+  </div>
+  <script>
+    $(document).ready(function() {
+      $("div").click(function() {
+        $("div").fadeTo("slow",0.2)
+      });
+      $("div").dblclick(function() {
+        $("div").fadeTo("slow",1)
+      });
+    });
+  </script>
+</body>
+</html>

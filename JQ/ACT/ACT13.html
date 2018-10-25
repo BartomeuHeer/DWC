@@ -1,0 +1,38 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../jquery-3.3.1.js"></script>
+  <style media="screen">
+    #d {
+      height: 200px;
+      width: 200px;
+      border: 2px solid;
+    }
+  </style>
+</head>
+<body>
+  <div id="d">
+    <p id="coord"></p>
+  </div>
+  <script>
+    $(document).ready(function() {
+
+      $(document).mousemove(function(f) {
+
+        $("#coord").text(
+          if (f.target.id == "d") {
+            "x: " + event.clientX + " y: " + event.clientY
+          }
+          else {
+            "Mouse out of the div"
+          }
+        )
+      });
+    });
+  </script>
+
+</body>
+</html>

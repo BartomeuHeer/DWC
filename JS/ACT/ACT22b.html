@@ -6,22 +6,9 @@
   <title>Document</title>
 </head>
 <body>
-  <script>
-  var proc = "";
-  var mon = "";
-  var hd = "";
-  function pc() {
-     proc = document.getElementById("Processor");
-     mon = document.getElementById("Monitor");
-     hd = document.getElementById("HardDisk");
 
-  }
 
-  function pc2() {
-    document.getElementById("text").value = (parseInt(proc.options[proc.selectedIndex].value) + parseInt(mon.options[mon.selectedIndex].value) + parseInt(hd.options[hd.selectedIndex].value));
-  }
 
-  </script>
   <form>
     Processor: <select id="Processor " onChange="pc()">
     <option value="400">intel i3 400€</option>
@@ -44,5 +31,18 @@
     <input type="button" value="Calculate" onclick="pc2()">
     Total PC: <input type="text" id="text"><br>
   </form>
+  <script>
+  var proc = "";
+  var mon = "";
+  var hd = "";
+  function pc() {
+     proc = document.getElementById("Processor");
+     mon = document.getElementById("Monitor");
+     hd = document.getElementById("HardDisk");
+
+  }
+
+
+  </script>
 </body>
 </html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../jquery-3.3.1.js"></script>
+</head>
+<body>
+  <a href="">link</a>
+  <input type="button" id="b1" value="google">
+  <input type="button" id="b2" value="youtube">
+  <input type="button" id="b3" value="gmail">
+  <script>
+    $(document).ready(function() {
+      $("#b1").click(function() {
+        $("a").attr("href","https://www.google.com/")
+      });
+      $("#b2").click(function() {
+        $("a").attr("href","https://www.youtube.com/")
+      });
+      $("#b3").click(function() {
+        $("a").attr("href","https://www.google.com/gmail")
+      });
+    });
+  </script>
+</body>
+</html>

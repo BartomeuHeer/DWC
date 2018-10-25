@@ -1,0 +1,44 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../jquery-3.3.1.js"></script>
+</head>
+<body>
+
+
+  <h1>Lorem ipsum dolor.
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </h1>
+  <h1>Lorem ipsum dolor.
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quas nulla accusamus saepe, in impedit suscipit ad similique, illo dolor perferendis provident quis expedita temporibus eveniet eligendi, quia alias ducimus.</p>
+  </h1>
+  <h1>Lorem ipsum dolor.
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic itaque quam aliquid obcaecati deserunt dolor animi harum officia quidem, ducimus quod provident magni repudiandae neque optio porro ex, fugit voluptates.</p>
+  </h1>
+  <h1>Lorem ipsum dolor.
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim repudiandae ratione esse molestiae iure eaque ut laboriosam ducimus consectetur magni inventore voluptatibus eius saepe ullam numquam, ab quisquam hic quibusdam.</p>
+  </h1>
+  <h1>Lorem ipsum dolor.
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, possimus nulla numquam fuga expedita voluptatem officia voluptate praesentium sed repellendus distinctio consectetur, dolores. Numquam, magnam! Possimus laboriosam beatae aperiam, asperiores.</p>
+  </h1>
+  <input type="button" id="b1" value="small">
+  <input type="button" id="b2" value="medium">
+  <input type="button" id="b3" value="big">
+  <script>
+    $(document).ready(function() {
+      $("#b1").click(function() {
+        $("h1:odd, p:odd").css("fontSize","10px")
+      });
+      $("#b2").click(function() {
+        $("h1:odd, p:odd").css("fontSize","15px")
+      });
+      $("#b3").click(function() {
+        $("h1:odd, p:odd").css("fontSize","20px")
+      });
+    });
+</script>
+</body>
+</html>
